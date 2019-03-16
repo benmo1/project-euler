@@ -4,5 +4,5 @@ namespace MorrisPhp\ProjectEuler;
 
 interface SolutionInterface
 {
-    function calculate();
+    public function calculate();
 }

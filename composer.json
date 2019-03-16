@@ -15,10 +15,5 @@
         "psr-4": {
             "MorrisPhp\\ProjectEuler\\": "src/"
         }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "MorrisPhp\\ProjectEuler\\Test\\": "test/"
-        }
     }
 }
