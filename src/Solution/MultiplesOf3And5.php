@@ -16,8 +16,12 @@ class MultiplesOf3And5 implements SolutionInterface
 
     public function calculate()
     {
-        $sum = 0;
+        // counters mean we dont need to divide by the divisors for each $n
+        // computer division A / B scales with O(N) because it recursively
+        // subtracts B until remainder < A, this solution does not
         $counters = array_fill(0, count(self::DIVISORS), 0);
+        $sum = 0;
+
         for ($n = 1; $n < self::N; $n++) {
             $this->updateCounters($counters);
             if ($this->isMatch($counters)) {
