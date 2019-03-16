@@ -6,7 +6,7 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $solutions = array_map(function ($file) {
     return pathinfo($file, PATHINFO_FILENAME);
-}, glob('Solution/*'));
+}, glob(__DIR__ . '/Solution/*'));
 
 foreach ($solutions as $index => $solution) {
     echo ++$index . ') ' . $solution . PHP_EOL;
