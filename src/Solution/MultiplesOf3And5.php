@@ -35,7 +35,7 @@ class MultiplesOf3And5 implements SolutionInterface
     private function updateCounters(array &$counters)
     {
         array_walk($counters, function (&$c, $i) {
-            $c = ++$c === self::DIVISORS[$i] ? 0 : $c;
+            $c = ++$c % self::DIVISORS[$i];
         });
     }
 
