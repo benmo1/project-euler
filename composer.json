@@ -1,0 +1,24 @@
+{
+    "name": "morris-php/project-euler",
+    "description": "Project euler problem solutions",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "authors": [
+        {
+            "name": "Ben Morris",
+            "email": "benjamin.morris77@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MorrisPhp\\ProjectEuler\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MorrisPhp\\ProjectEuler\\Test\\": "test/"
+        }
+    }
+}
